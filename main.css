@@ -8,7 +8,7 @@ body{
 	box-sizing: border-box;
 }
 
-h1,h2{
+h1,h2,p{
 	margin: 0;
 	padding: 0;
 }
@@ -35,7 +35,8 @@ a{
 	align-items: center;
 }
 .header__nav{
-	width: 1024px;
+	max-width: 1024px;
+	width: 960px;
 
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -44,8 +45,6 @@ a{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	max-width: 1024px;
 
 	margin: 0 auto;
 
@@ -92,7 +91,7 @@ a{
  	background: url(img/bck1.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%; 
+	background-size: 100%;
 }
 
 .header__wnttow__center{
@@ -128,15 +127,21 @@ a{
 
 
 .header__wnttow__rm{
-	margin: 0; padding: 0;
-	border: 1px solid #e4e4e4; 
+	margin: 0;
+	padding: 11px 48px;
+
+	border: 1px solid #e4e4e4;
+	border-radius: 10px;
 	outline: none;
+
 	background-color: transparent;
+
 	cursor: pointer;
+
 	font-size: 1.875em;
 	color: #e4e4e4;
-	padding: 11px 48px;
-	border-radius: 10px;
+
+
 }
 
 /*Section atsttwaetelat*/
@@ -178,7 +183,7 @@ a{
 	font-size: 0.875em;
 	color: #4c505d;
 	text-align: center;
-	line-height: 1.5;
+	linfe-height: 1.5;
 }
 
 /*settings for imgages*/
@@ -198,8 +203,140 @@ a{
 }
 
 
+/*Section quote*/
+/*Settings quote*/
 
-.quote__test{
-	font-size: 3em;
-	font-family:"helvetica-lt-std-bold";
+
+.quote{
+	background-color: #00d089;
+}
+
+.quote__center{
+	height: 466px;
+	width: 1024px;
+
+	margin: 0 auto;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+/*Setting first block*/
+.quote__center__firstbox{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.quote__center__firstbox__naq__n{
+	text-transform: uppercase;
+	font-size: 1.625em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+.quote__center__firstbox__naq__q{
+	font-family: sans-serif;
+	font-size: 20em;
+	font-weight: bold;
+	color: #33d9a1;
+
+	height: 100px;
+
+	line-height: 0.8;
+}
+
+/*Setting second block*/
+
+.quote__center__secondbox{
+	width: 900px;
+
+	text-align: start;
+	font-size: 1.125em;
+
+	color: #fff;
+
+	line-height: 1.5;
+}
+
+
+/*Section map*/
+/*Settings map*/
+
+.map{
+	background-image: url(img/map1.png);
+	background-size: 100%;
+	background-position:center;
+}
+
+.map__center{
+	height: 515px;
+	width: 1024px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0 auto;
+
+	border-radius: 30px;
+}
+
+.map__center__circle{
+	width: 430px;
+	height: 430px;
+	background-color: #fff;
+
+	border-radius: 50%;
+
+	opacity: 0.8;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.map__center__circle input{
+	height: 30px;
+	width: 275px;
+
+	border: 1px solid #d8d8d8;
+}
+
+.map__center__circle input:last-child{
+	height: 80px;
+}
+
+.map__center__circle input:not(:last-child){
+	margin-bottom: 10px;
 }
