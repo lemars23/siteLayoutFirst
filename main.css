@@ -303,7 +303,7 @@ a{
 	border-radius: 30px;
 }
 
-.map__center__circle{
+.map__center__circle__form{
 	width: 430px;
 	height: 430px;
 	background-color: #fff;
@@ -326,17 +326,41 @@ a{
 	align-items: center;
 }
 
-.map__center__circle input{
+.map__center__circle__form input{
 	height: 30px;
 	width: 275px;
 
 	border: 1px solid #d8d8d8;
 }
 
-.map__center__circle input:last-child{
+#message{
 	height: 80px;
 }
 
-.map__center__circle input:not(:last-child){
+.map__center__circle__form input:not(:last-child){
 	margin-bottom: 10px;
 }
+
+
+/*Settings footer*/
+
+.footer{
+	height: 40px;
+
+	background-color: #00d089;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__copy{
+	font-size: 0.85em;
+
+	color: #fff;
+}
+
